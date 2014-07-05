@@ -1,0 +1,9 @@
+AFLIC made by Jeffrey H. Diaz
+
+	In order to run this program, compile it with the suplied makefile using the 'make' command. After this input
+ './a.out' with two command line arguments. The first command line argument is the number of runways available, and at least 2 runways are required for the
+ program to function correctly as at least 1 runway is needed each for the functions takeoff and landing. The second command line argument will be the amount of flights that the AFLIC will be monitoring which should be between 0 and 100 inclusive. This is an example of how the line should be inputted, 
+"./a.out 2 4". This line will run the AFLIC.c with 2 runways at the airport and 4 flights being monitored by the AFLIC. Flights will be simulated attempting to either land or takeoff. Collision is detected by checking to see if the variable 'RUNWAYS_FREE' ever attempts to go below 0 in either the landing or
+ takeoff functions. If it does, this means that more than 1 airplane has occupied a runway at a time. Once a collision 
+occures the two planes involved will have their id's changed to -1 meaning that they are no longer active/being  monitored
+and the runway where the collision occured is no longer available for use.
